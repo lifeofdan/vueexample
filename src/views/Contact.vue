@@ -2,7 +2,7 @@
   <div>
     <h1>{{ pageName }}</h1>
     <div class="container">
-      <ContactForm />
+      <ContactForm title="Contact Form" @data="personNameIs"/>
     </div>
 
   </div>
@@ -16,7 +16,11 @@ export default {
   setup () {
     const pageName = 'Contact Page'
 
-    return { pageName }
+    function personNameIs (event) {
+      console.log('the event', event)
+      alert(`${event.name}, ${event.message}, ${event.email}`)
+    }
+    return { pageName, personNameIs }
   }
 }
 </script>
