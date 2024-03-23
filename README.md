@@ -1,3 +1,5 @@
+This was a quick demo to show off the basics of vue to a local developer meetup called "Toowoomba Coder's and Makers".
+
 # vueplayground
 
 ## Project setup
